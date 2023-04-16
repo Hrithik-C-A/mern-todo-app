@@ -1,6 +1,7 @@
 import React, { useContext ,useReducer } from 'react'
 import TodoList from './components/TodoList'
-import RegisterUser from './components/RegisterUser'
+import './App.css'
+
 
 const todoInitialState = {
   todoList: []
@@ -13,11 +14,9 @@ const App = () => {
 
   return (
     <div>
-      <RegisterUser/>
-    {/* <todoContext.Provider value={{state,dispatch}}>
+    <todoContext.Provider value={{state,dispatch}}>
         <TodoList/>
-    </todoContext.Provider> */}
-
+    </todoContext.Provider>
     </div>
   )
 }

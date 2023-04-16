@@ -4,7 +4,6 @@ const { urlencoded } = require('body-parser')
 const cors = require('cors')
 const mongoose = require('mongoose')
 
-const registerUserController = require('./controllers/registerUser')
 
 const postTodoController = require('./controllers/postTodo')
 const getTodoController = require('./controllers/getTodo')
@@ -23,8 +22,6 @@ try {
 app.use(cors())
 app.use(express.json())
 app.use(express.urlencoded({extended: true}))
-
-app.post('/api/register',registerUserController)
 
 app.get('/todos',getTodoController)
 app.get('/todos/one/:id',getOneTodoController)
