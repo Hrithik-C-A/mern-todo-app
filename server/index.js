@@ -12,7 +12,7 @@ const updateTodoController = require('./controllers/updateTodo')
 const deleteTodoController = require('./controllers/deleteTodo')
 
 try {
-    mongoose.connect('mongodb+srv://hrithikca:practice@cluster0.qeheprw.mongodb.net/test',{useNewUrlParser: true,useUnifiedTopology: true})
+    mongoose.connect('mongodb+srv://username:password@cluster0.qeheprw.mongodb.net/test',{useNewUrlParser: true,useUnifiedTopology: true})
     console.log('Connected to DB')
 
 } catch (error) {
